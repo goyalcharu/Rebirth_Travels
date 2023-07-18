@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #f5f2d0;
+}
+
+/* HEADER */
+
+.main {
+  margin: auto;
+  max-width: 1200px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/rajasthan2.jpg);
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVIGATION */
+.main-list {
+  float: left;
+  font-variant: small-caps;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 1000px) {
+  .main-list {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-list {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-list {
+    font-size: 7px;
+    font-weight: bold;
+  }
+}
+
+.main-list-item {
+  display: inline-block;
+}
+
+.main-list-item a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  transition: 0.7s ease;
+}
+
+.main-list-item a:hover {
+  background-color: rgb(89, 73, 46);
+}
+
+.active {
+  background-color: rgb(89, 73, 46);
+}
+
+.history-list {
+  margin-left: 40px;
+}
+
+.history-para a {
+  text-decoration: none;
+}
+
+/* TITLE */
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  color: white;
+  font-size: 4vw;
+  font-variant: small-caps;
+}
+
+/* MAIN CONTENT */
+.page-wrapper {
+  min-height: 100%;
+}
+
+/* HISTORY */
+.history {
+  margin: 20px;
+  text-align: center;
+}
+
+.info {
+  margin: 20px;
+} 
+
+.history-para {
+  padding: 13px;
+}
+
+.history-heading2 {
+  margin: 2px;
+  padding-top: 20px;
+}
+
+.aboutus-para {
+  text-align-last: left;
+  padding: 13px;
+}
+
+.aboutus-quote {
+  text-align: center;
+}
+/* IMAGE GALLERY */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 400px;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* FAMOUS PLACES PAGE */
+/* IMAGE GALLERY */
+.image-gallery {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.gallery {
+  border: 2px solid #000000;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  box-shadow: 0 0 8px 4px rgb(230, 0, 0);
+}
+
+.des {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  margin-top: 10px;
+  padding: 0 7px;
+  width: 290px;
+}
+
+/* Stay Page */
+.stay {
+  padding: 10px;
+}
+
+.stay-link {
+  color: #ececec;
+}
+
+/* E-Ticketing Page */
+
+.ticket-link {
+  color: green;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 2cm;
+  background: #2e1a1f;
+  color: #d3d3d3;
+  height: 400px;
+  position: relative;
+}
+
+.footer .footer-bottom {
+  background-color: #513136;
+  color: #686868;
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.footer .footer-content {
+  height: 350px;
+  display: flex;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25px;
+}
+
+.footer .footer-content h1 {
+  color: white;
+}
+
+.footer-para {
+  margin: 10px 0;
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid gray;
+  width: 45px;
+  height: 38px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #d3d3d3;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.footer .footer-content .about .socials i:hover {
+  color: white;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+.logo-text {
+  font-variant: initial;
+}
+
+.logo-text .logo-span {
+  color: #a2c376;
+}
+
+.symbols {
+  margin-left: 40px;
+}
+
+.symbols i:hover {
+  color: red;
+  transition: all 0.3s;
+}
+
+.symbols hr {
+   color: black;
+   background-color: black;
+   height:2px;
+   width:50%;
+}
+
+
+hr {
+  height:4px;
+  border-width:0;
+  color: black;
+  background-color: black;
+}
+
+/* Container holding the image and the text */
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: #fce249;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #A0522D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #FA8072;
+}
+
+/* Add a background color and some padding around the form */
+.cont {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* For index page image gallery*/
+.index_try {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column-1 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.radio {
+  text-align: left;
+}
+
+input[type="radio"]{
+  margin: 0 10px 0 10px;
+}

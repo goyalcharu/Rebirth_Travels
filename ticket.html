@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Rebirth Travels</title>
+  </head>
+
+  <body>
+    <!-- Header and Nav -->
+    <header>
+      <nav>
+        <div class="main">
+          <ul class="main-list">
+            <li class="main-list-item"><a href="index.html">Home</a></li>
+            <li class="main-list-item"><a href="aboutus.html">About Us</a></li>
+            <li class="main-list-item"><a href="famousplaces.html">Discover</a></li>
+            <li class="main-list-item"><a href="stay.html">Stay</a></li>
+            <li class="active main-list-item"><a href="ticket.html">E-Ticketing</a></li>
+            <li class="main-list-item"><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- // Header and Nav -->
+
+      <!-- Title heading -->
+      <div class="title">
+        <span class="heading">Create Your Memories</span>
+      </div>
+    </header>
+    <!-- // Title heading -->
+
+    <!-- Ticket -->
+    <div class="page-wrapper">
+      <main>
+        <div class="history">
+          <h1 class="history-heading1">Book Your Ticket</h1>
+          <hr />
+          
+
+          <div class="cont">
+                <form action="action_page.php">
+
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                  <label for="city">City</label>
+                  <select id="city" name="city">
+                    <option value="select city">Select City</option>
+                    <option value="jaipur">Jaipur</option>
+                    <option value="jaisalmer">Jaisalmer</option>
+                    <option value="bikaner">Bikaner</option>
+                    <option value="ajmer">Ajmer</option>
+                    <option value="mount abu">Mount Abu</option>
+                    <option value="jodhpur">Jodhpur</option>
+                    <option value="udaipur">Udaipur</option>
+                    <option value="alwar">Alwar</option>
+                    <option value="barmer">Barmer</option>
+                    <option value="karauli">Karauli</option>
+                    <option value="dausa">Dausa</option>
+                    <option value="pali">Pali</option>
+                    <option value="bundi">Bundi</option>
+                    <option value="chittorgarh">Chittorgarh</option>
+                    <option value="bharatpur">Bharatpur</option>
+                  </select>
+
+                  <label for="ticket type">Ticket Type</label>
+                  <select id="ticket type" name="ticket type">
+                    <option value="select ticket type">Select Ticket Type</option>
+                    <option value="normal ticket">Normal Ticket</option>
+                    <option value="composite">Composite Ticket</option>
+                  </select>
+
+                <div class="radio"><h3>Visitor Type</h3>
+                <br>
+                <input type="radio" id="Indian Citizen" name="visitor" value="Indian Citizen"><br>
+                <label for="Indian Citizen">Indian Citizen</label>
+                <input type="radio" id="Foreigner Citizen" name="visitor" value="Foreigner Citizen"><br>
+                <label for="Foreigner Citizen">Foreigner Citizen</label>
+                <input type="radio" id="Indian Student" name="visitor" value="Indian Student"><br>
+                <label for="Indian Student">Indian Student</label>
+                <input type="radio" id="Foreigner Student" name="visitor" value="Foreigner Student"><br>
+                <label for="Foreigner Student">Foreigner Student</label>
+              </div>
+
+                  <label for="quantity"><strong>No. of Ticket</strong></label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="20">
+
+                  <label for="date"><strong>Select Date</strong></label>
+                  <input type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+
+                  <input type="submit" value="BOOK TICKET">
+                </form>
+              </div>
+
+        </div>
+      </main>
+    </div>
+    <!-- // Ticket -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h1 class="logo-text">
+              <span class="logo-span">C</span>haru
+              <span class="logo-span">G</span>oyal
+            </h1>
+            <p class="footer-para">
+              BTECH CSE 2 AIML, 2K20CSUN04011
+            </p>
+            <div class="contact">
+              <span><i class="fas fa-phone"></i>&nbsp; 9643331317</span>
+              <span
+                ><i class="fas fa-envelope"></i>&nbsp;
+                goyalcharu105@gmail.com</span
+              >
+            </div>
+            <div class="socials">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; | Designed By Charu Goyal
+        </div>
+      </div>
+    </footer>
+    <!-- // Footer -->
+  </body>
+</html>
